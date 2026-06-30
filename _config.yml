@@ -9,6 +9,13 @@ baseurl: "/VEP"
 remote_theme: just-the-docs/just-the-docs
 
 search_enabled: true
+search:
+  tokenizer_separator: "/[\\s\\-/()]+|(?<=[\\u4e00-\\u9fff])/"
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+
 heading_anchors: true
 color_scheme: light
 
