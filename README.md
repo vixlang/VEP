@@ -1,2 +1,1 @@
 # VEP
-Vix Enhancement Proposal

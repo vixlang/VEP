@@ -4,7 +4,7 @@ title: 首页
 nav_order: 1
 ---
 
-# Vix Enhancement Proposals
+# VEP
 
 VEP（Vix Enhancement Proposal）是 Vix 语言的增强提案规范，类似于 Python 的 PEP。
 
