@@ -1,0 +1,31 @@
+<button class="btn btn-outline js-toggle-dark-mode" style="width:100%;margin-top:8px;">
+  ☾ 暗色模式
+</button>
+
+<script>
+(function() {
+  var saved = localStorage.getItem('jtd-theme');
+
+  function init() {
+    if (typeof jtd === 'undefined') {
+      setTimeout(init, 50);
+      return;
+    }
+    var btn = document.querySelector('.js-toggle-dark-mode');
+
+    jtd.addEvent(btn, 'click', function(){
+      var isDark = jtd.getTheme() === 'dark';
+      jtd.setTheme(isDark ? 'light' : 'dark');
+      localStorage.setItem('jtd-theme', isDark ? 'light' : 'dark');
+      btn.innerHTML = isDark ? '☾ 暗色模式' : '☀ 亮色模式';
+    });
+
+    if (saved === 'dark') {
+      jtd.setTheme('dark');
+      btn.innerHTML = '☀ 亮色模式';
+    }
+  }
+
+  init();
+})();
+</script>
