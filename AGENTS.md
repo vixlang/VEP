@@ -30,7 +30,7 @@
 
 - `_veps/` 中的文档由 `_layouts/vep.html` 渲染
 - VEP 文档添加 `nav_order` 后自动出现在侧边栏（不需要 `veps.md`）
-- 索引页 `_veps/vep-0000.md` 通过 Liquid `{% for vep in site.veps %}` 遍历展示列表
+- 索引页 `_veps/vep-0000.md` 通过 Liquid `{% raw %}{% for vep in site.veps %}{% endraw %}` 遍历展示列表
 
 ## VEP 文档规范
 
